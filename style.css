@@ -1,15 +1,16 @@
-all {
+* {
     margin: 0;
     padding: 0;
 }
 nav {
-    background-color: #2a2727;
+    background-color: #404146;
     display: flex;
     width: 100%;
     align-items: center;
 }
 
 .nav-logo {
+    padding: 30px;
     letter-spacing: 7px;
     font-size: 22px;
     font-weight: bold;
@@ -39,11 +40,11 @@ nav {
 
 .hero h1 {
     text-transform: uppercase;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding-top: 50px;
     font-size: 75px;
     font-weight: bolder;
-    color: #2a2727;
+    color: #404146;
     letter-spacing: 5px;
 }
 
@@ -61,21 +62,20 @@ nav {
 
 .bodytentangsaya {
     margin-top: 0;
-    background-color: #1111;
+    background-color: #F4F4F4;
     display: flex;
     flex-direction: column;
     width: auto;
     height: auto;
     align-items: center;
     text-align: center;
-    padding: 60px 200px;
-
+    padding: 70px 200px;
 }
 
 h3 {
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -86,20 +86,93 @@ p {
     color: #777b7e;
 }
 
-.proyekcontoh {
-
-    text-align: center;
-    display: flex;
-    width: 100%;
-    margin: 100px 0px;
-}
-
-.proyekcontoh h3 {
+.proyekcontohjudul {
     display: flex;
     flex-direction: column;
+    padding-top: 70px;
 }
 
-.proyekcontohitem img {
-    width: 75%;
+.proyekcontoh {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 90px;
 }
 
+.proyekcontoh img {
+    width: 65%;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px 2px #d9d9d9;
+}
+
+.hubungisaya {
+    display: flex;
+    align-items: center;
+    background-color: #F4F4F4;
+    color: #404146;
+    flex-direction: column;
+    padding: 70px 0px;
+}
+.hubungisaya p {
+    color: white;
+}
+
+.hubungisaya input {
+    width:40%;
+    margin-bottom: 30px;
+    padding: 13px 20px;
+    color: #404146;
+    height: 25px;
+    border: 0px solid white;
+    border-radius: 10px;
+    border-color: white;
+}
+
+#kirim {
+    width:25%;
+    margin-bottom: 20px;
+    background-color: #F5E995;
+    color: #404146;
+    height: 45px;
+    border: 0px solid white;
+    border-radius: 10px;
+}
+
+.hubungisaya textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width:40%;
+    margin-bottom: 35px;
+    padding: 13px 20px;
+    color: #404146;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    border-color: white;
+}
+
+footer {
+    background-color: #7C7D82;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 7px;
+    font-weight: bold;
+    color: #ffff;
+    padding: 30px;
+}
+
+footer ul {
+    list-style: none;
+    text-align: right;
+    padding: 30px;
+    line-height: 40px;
+}
