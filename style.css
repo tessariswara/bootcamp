@@ -8,6 +8,11 @@ a {
     text-decoration: none; 
     color: white; 
 }
+
+a:hover {
+    text-decoration: none; 
+    color: lightgray; 
+}
 @media (min-width:1000px) {
     nav {
         background-color: #404146;
