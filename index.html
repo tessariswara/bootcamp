@@ -7,55 +7,86 @@
     <link rel="stylesheet" href="style.css" />
     <title>Ninja Ken</title>
   </head>
-  <nav>
-    <ul class="nav-logo">
-      NINJA KEN
-    </ul>
-    <ul class="nav-list">
-      <li><a href="#bodytentangsaya">Tentang Saya</a></li>
-      <li><a href="#proyekcontohjudul">Proyek Contoh</a></li>
-      <li><a href="#hubungisaya">Hubungi Saya</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul class="nav-logo">
+        NINJA KEN
+      </ul>
+      <ul class="nav-list">
+        <li class="tentangsaya">Tentang Saya</li>
+        <li class="proyekcontoh">Proyek Contoh</li>
+        <li class="hubungi">Hubungi Saya</li>
+      </ul>
+    </nav>
+  </header>
   <body>
     <div class="hero">
       <h1>Ninja Ken<span>.</span></h1>
       <h2>My Portfolio</h2>
       <img src="Ninja Ken.png" alt="" />
     </div>
-    <div class="bodytentangsaya" id="bodytentangsaya">
-      <h3>Tentang Saya</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla
-        purus massa, non lacinia leo finibus tempor. Fusce molestie neque a
-        scelerisque suscipit. Vivamus interdum dolor non nulla laoreet, eget
-        malesuada quam finibus. Vivamus eros massa, sodales non velit eget,
-        vulputate tincidunt libero. Praesent elementum dolor quis congue
-        condimentum. Morbi sem erat, sagittis ac fermentum nec, sagittis et
-        enim. Donec eu turpis metus. Cras porta vestibulum ex, at eleifend leo
-        tristique quis
-      </p>
-    </div>
-    <div class="proyekcontohjudul" id="proyekcontohjudul">
-      <h3>Proyek Contoh</h3>
-    </div>
-    <div class="proyekcontoh">
-      <div class="proyekcontohitem">
-        <img src="1.png" />
-        <p>Image 1</p>
-      </div>
-      <div class="proyekcontohitem">
-        <img src="2.png" />
-        <p>Image 2</p>
-      </div>
-      <div class="proyekcontohitem">
-        <img src="3.png" />
-        <p>Image 3</p>
+    <div class="contentbody">
+      <div class="bodytentangsaya">
+        <h3>Tentang Saya</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla
+          purus massa, non lacinia leo finibus tempor. Fusce molestie neque a
+          scelerisque suscipit. Vivamus interdum dolor non nulla laoreet, eget
+          malesuada quam finibus. Vivamus eros massa, sodales non velit eget,
+          vulputate tincidunt libero. Praesent elementum dolor quis congue
+          condimentum. Morbi sem erat, sagittis ac fermentum nec, sagittis et
+          enim. Donec eu turpis metus. Cras porta vestibulum ex, at eleifend leo
+          tristique quis
+        </p>
       </div>
     </div>
-    <div class="hubungisaya" id="hubungisaya">
+    <div class="contentproyek" id="contentproyek">
+      <div class="proyekcontohjudul">
+        <h3>Proyek Contoh</h3>
+      </div>
+      <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+      <a class="next" onclick="updateSlide(1)">&#10095;</a>
+      <div class="proyekcontoh" id="openModalButton">
+        <div class="proyekcontohitem fade">
+          <a href="#contentproyek" data-produk="1">
+            <img src="1.png" />
+            <p>Image 1</p>
+          </a>
+        </div>
+        <div class="proyekcontohitem fade">
+          <a href="#" data-produk="2">
+            <img src="2.png" />
+            <p>Image 2</p>
+          </a>
+        </div>
+        <div class="proyekcontohitem fade">
+          <a href="#" data-produk="3">
+            <img src="3.png" />
+            <p>Image 3</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="myModal">
+      <div id="modalContent">
+        <span id="closeModalIcon">&times;</span>
+        <h2 id="pjudul"></h2>
+        <img id="pgambar" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla
+          purus massa, non lacinia leo finibus tempor. Fusce molestie neque a
+          scelerisque suscipit. Vivamus interdum dolor non nulla laoreet, eget
+          malesuada quam finibus. Vivamus eros massa, sodales non velit eget,
+          vulputate tincidunt libero. Praesent elementum dolor quis congue
+          condimentum. Morbi sem erat, sagittis ac fermentum nec, sagittis et
+          enim. Donec eu turpis metus. Cras porta vestibulum ex, at eleifend leo
+          tristique quis
+        </p>
+      </div>
+    </div>
+    <div class="hubungisaya">
       <h3 class="hubungitext">Hubungi Saya</h3>
-      <input type="text" placeholder="Email (Diperlukan)" />
+      <input type="text" placeholder="Email (Diperlukan)" id="email" />
       <textarea
         name="message"
         id="message"
@@ -63,15 +94,19 @@
         rows="10"
         placeholder="Message (Diperlukan)"
       ></textarea>
+      <p id="notif"></p>
       <input type="submit" id="kirim" value="Kirim" />
     </div>
   </body>
   <footer>
-    <p>Ninja Ken</p>
-    <ul>
-      <li><a href="#bodytentangsaya">Tentang Saya</a></li>
-      <li><a href="#proyekcontohjudul">Proyek Contoh</a></li>
-      <li><a href="#hubungisaya">Hubungi Saya</a></li>
-    </ul>
+    <div class="contentfooter">
+      <p>Ninja Ken</p>
+      <ul>
+        <li>Tentang Saya</li>
+        <li>Proyek Contoh</li>
+        <li>Hubungi Saya</li>
+      </ul>
+    </div>
   </footer>
+  <script src="script.js"></script>
 </html>
