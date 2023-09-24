@@ -44,35 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
     faqContainer[i].addEventListener("click", function () {
       const faqContent = this.nextElementSibling;
       console.log(faqContent);
-      if (faqContent.style.display === "block") {
-        faqContent.style.display = "none";
-      } else {
-        faqContent.style.display = "block";
-      }
+      // if (faqContent.style.display === "block") {
+      //   faqContent.style.display = "none";
+      // } else {
+      //   faqContent.style.display = "block";
+      // }
     });
   }
 });
-
-let slideIndex = 0;
-
-const updateSlide = (n) => {
-  slideIndex += n;
-  showSlide(slideIndex);
-};
-
-const showSlide = (n) => {
-  const slides = document.getElementsByClassName("proyekcontohitem");
-  if (n > slides.length - 1) {
-    slideIndex = 0;
-  }
-  if (n < 0) {
-    slideIndex = slides.length - 1;
-  }
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex].style.display = "block";
-  console.log(slideIndex);
-};
-
-showSlide(slideIndex);

@@ -13,19 +13,19 @@
         NINJA KEN
       </ul>
       <ul class="nav-list">
-        <li class="tentangsaya">Tentang Saya</li>
-        <li class="proyekcontoh">Proyek Contoh</li>
-        <li class="hubungi">Hubungi Saya</li>
+        <li><a href="#hero">Tentang Saya</a></li>
+        <li><a href="#contentbody">Proyek Contoh</a></li>
+        <li><a href="#contentproyek">Hubungi Saya</a></li>
       </ul>
     </nav>
   </header>
   <body>
-    <div class="hero">
+    <div class="hero" id="hero">
       <h1>Ninja Ken<span>.</span></h1>
       <h2>My Portfolio</h2>
       <img src="Ninja Ken.png" alt="" />
     </div>
-    <div class="contentbody">
+    <div class="contentbody" id="contentbody">
       <div class="bodytentangsaya">
         <h3>Tentang Saya</h3>
         <p>
@@ -54,13 +54,13 @@
           </a>
         </div>
         <div class="proyekcontohitem fade">
-          <a href="#" data-produk="2">
+          <a href="#contentproyek" data-produk="2">
             <img src="2.png" />
             <p>Image 2</p>
           </a>
         </div>
         <div class="proyekcontohitem fade">
-          <a href="#" data-produk="3">
+          <a href="#contentproyek" data-produk="3">
             <img src="3.png" />
             <p>Image 3</p>
           </a>
@@ -97,14 +97,63 @@
       <p id="notif"></p>
       <input type="submit" id="kirim" value="Kirim" />
     </div>
+    <div class="faq">
+      <h3>Frequently Asked Question (FAQ)</h3>
+      <button class="faq-container">
+        Siapakah yang membuat konten berikut?
+      </button>
+      <div class="faq-content">
+        <p>
+          Pengembang halaman website berikut merupakan Tessa Fauzi Riswara. Anda
+          dapat menjelajahi portofolionya dan terhubung dengan Tessa di GitHub
+          melalui alamat:<br />
+        </p>
+        <p>
+          Github :
+          <a href="https://github.com/tessariswara">hi this is eca</a>
+        </p>
+        <p>
+          Instagram :
+          <a href=" https://instagram.com/tessariswara"> tessariswara</a>
+        </p>
+      </div>
+      <button class="faq-container">
+        Apakah kesulitan dalam membuat konten berikut?
+      </button>
+      <div class="faq-content">
+        <p>
+          Kesulitan dalam membuat konten berikut adalah menampilkan visualisasi
+          yang sesuai dengan perintah tetapi dengan menggunakan bentuk yang
+          responsive agar ketika berbeda ukuran layar maka semua elemen dapat
+          beradaptasi mengikuti perubahan ukuran layar. Hal tersebut tentu
+          memerlukan pemahaman yang cukup baik mengenai Flexbox.
+        </p>
+      </div>
+
+      <button class="faq-container">
+        Bagaimana Progate membantu saya dalam belajar membuat konten seperti
+        berikut?
+      </button>
+      <div class="faq-content">
+        <p>
+          Progate membantu Tessa dalam mengembangkan halaman berikut dengan
+          menggunakan Flexbox. Progate memberikan materi yang detail mengenai
+          dasar-dasar Flexbox hingga metode pengimplementasian Flexbox ke dalam
+          sebuah website. Metode pembelajaran Progate yaitu dengan memberikan
+          sebuah slide materi yang berisi penjelasan mendetail mengenai dasar
+          dan konsep, kemudian juga memberikan sebuah media latihan di dalam
+          website progate.com.
+        </p>
+      </div>
+    </div>
   </body>
   <footer>
     <div class="contentfooter">
       <p>Ninja Ken</p>
       <ul>
-        <li>Tentang Saya</li>
-        <li>Proyek Contoh</li>
-        <li>Hubungi Saya</li>
+        <li><a href="#hero">Tentang Saya</a></li>
+        <li><a href="#contentbody">Proyek Contoh</a></li>
+        <li><a href="#contentproyek">Hubungi Saya</a></li>
       </ul>
     </div>
   </footer>

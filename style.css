@@ -4,33 +4,46 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: white;
+}
+
+a:active {
+    color: #F5E995;
+}
+
 #myModal {
     display: none;
     position: fixed;
     left: 0;
     top: 0;
-    padding-top: 120px;
+    padding-top: 20vh;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: 200;
   }
 
   #modalContent {
     background-color: #fefefe;
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     width: 60%;
+    max-width: 600px;
   }
 
   #modalContent img {
-    width: 200px;
-    height: 200px;
+    padding: 30px 0;
+    width: 300px;
+    height: 300px;
   }
 
   #closeModalIcon {
+    padding: 0;
     color: #aaaaaa;
     float: right;
+    font-size: 50px;
   }
 
   #closeModalIcon:hover,
@@ -56,15 +69,15 @@
   
   .prev,
   .next {
-    align-items: c;
     align-items: center;
     font-size: 50px;
     cursor: pointer;
     border-radius: 0 3px 3px 0;
     user-select: none;
     position: absolute;
-    padding: 5% 5px;
-    z-index: 100;
+    padding: 0 10%;
+    top: 50%;
+    z-index: 1;
   }
   
   .next {
@@ -97,11 +110,44 @@
     }
   }
 
-@media (min-width:1000px) {
+.faq {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 54%;
+    gap: 10px;
+}
 
+.faq a {
+    color: teal;
+}
+
+.faq button {
+    background-color: #F4F4F4;
+    padding: 20px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 800;
+}
+
+.faq-content {
+    display: none;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+@media (min-width:1000px) {
     header {
         background-color: #404146;
+        position: fixed;
+        width: 100%;
+        z-index: 200;
     }
+
     nav {
         margin: 0 auto;
         display: flex;
@@ -125,14 +171,14 @@
         display: inline;
         padding: 0px 20px
     }
-    
+
     .hero {
         width: 100%;
-        height:auto;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        padding-top: 85px;
     }
     
     .hero img {
@@ -194,7 +240,7 @@
     }
     
     .contentproyek {
-        max-width: 1440px;
+        max-width: 640px;
         margin: 0 auto;
     }
     .proyekcontohjudul {
@@ -208,7 +254,6 @@
         display: flex;
         flex-direction: row;
         margin-top: 20px;
-        padding-bottom: 90px;
     }
     
     .proyekcontoh img {
@@ -218,6 +263,7 @@
     }
     
     .hubungisaya {
+        margin-top: 90px;
         display: flex;
         align-items: center;
         background-color: #F4F4F4;
@@ -314,6 +360,14 @@ a {
 }
 
 @media (max-width:1000px) {
+
+    header {
+        background-color: #404146;
+        position: fixed;
+        width: 100%;
+        z-index: 200;
+    }
+
     nav {
         background-color: #404146;
         display: flex;
@@ -448,6 +502,15 @@ a {
         border-radius: 10px;
         border-color: white;
     }
+    .faq {
+        padding: 70px;
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .faq button {
+        width: 100%;
+    }
     
     #kirim {
         width:50%;
@@ -492,8 +555,8 @@ a {
     
     footer ul {
         list-style: none;
-        text-align: right;
-        padding: 30px;
+        text-align: left;
+        padding: 0px 30px 30px 30px;
         line-height: 40px;
     }       
     
@@ -501,6 +564,11 @@ a {
 
 
 @media (max-width:670px) {
+
+    #myModal {
+        padding-top: 13vh;
+      }
+
     nav {
         background-color: #404146;
         display: flex;
@@ -529,7 +597,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        padding-top: 85px;
     }
     
     .hero img {
@@ -652,14 +720,24 @@ a {
         border-radius: 10px;
         border-color: white;
     }
-    
+
+    .faq {
+        padding: 70px;
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .faq button {
+        width: 100%;
+    }
+
     footer {
         background-color: #7C7D82;
         color: white;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        justify-content: space-between;
+        justify-content: left;
     }
     
     footer p {
@@ -674,8 +752,8 @@ a {
     
     footer ul {
         list-style: none;
-        text-align: right;
-        padding: 30px;
+        text-align: left;
+        padding: 0px 30px 30px 30px;
         line-height: 40px;
     }    
     
