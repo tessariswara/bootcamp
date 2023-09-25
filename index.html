@@ -44,8 +44,10 @@
       <div class="proyekcontohjudul">
         <h3>Proyek Contoh</h3>
       </div>
-      <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
-      <a class="next" onclick="updateSlide(1)">&#10095;</a>
+      <a style="color: black" class="prev" onclick="updateSlide(-1)"
+        >&#10094;</a
+      >
+      <a style="color: black" class="next" onclick="updateSlide(1)">&#10095;</a>
       <div class="proyekcontoh" id="openModalButton">
         <div class="proyekcontohitem fade">
           <a href="#contentproyek" data-produk="1">
@@ -87,6 +89,7 @@
     <div class="hubungisaya">
       <h3 class="hubungitext">Hubungi Saya</h3>
       <input type="text" placeholder="Email (Diperlukan)" id="email" />
+      <p style="text-align: left" id="notif"></p>
       <textarea
         name="message"
         id="message"
@@ -94,8 +97,7 @@
         rows="10"
         placeholder="Message (Diperlukan)"
       ></textarea>
-      <p id="notif"></p>
-      <input type="submit" id="kirim" value="Kirim" />
+      <input style="margin-top: 20px" type="submit" id="kirim" value="Kirim" />
     </div>
     <div class="faq">
       <h3>Frequently Asked Question (FAQ)</h3>

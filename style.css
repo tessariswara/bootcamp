@@ -22,53 +22,54 @@ a:active {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 200;
-  }
+}
 
-  #modalContent {
+#modalContent {
     background-color: #fefefe;
     margin: 0 auto;
     text-align: center;
     padding: 50px;
     width: 60%;
     max-width: 600px;
-  }
+}
 
-  #modalContent img {
+#modalContent img {
     padding: 30px 0;
     width: 300px;
     height: 300px;
-  }
+}
 
-  #closeModalIcon {
+#closeModalIcon {
     padding: 0;
     color: #aaaaaa;
     float: right;
     font-size: 50px;
-  }
+}
 
-  #closeModalIcon:hover,
-  #closeModalIcon:focus {
+#closeModalIcon:hover,
+#closeModalIcon:focus {
     color: #000;
     cursor: pointer;
-  }
-  .contentproyek {
+}
+
+.contentproyek {
     position: relative;
     align-items: center;
-  }
+}
 
-  .proyekcontoh {
+.proyekcontoh {
     justify-content: center;
     text-align: center;
     align-items: center;
-  }
+}
 
-  .proyekcontohitem {
+.proyekcontohitem {
     display: flex;
     flex-wrap: nowrap;
-  }
-  
-  .prev,
-  .next {
+}
+
+.prev,
+.next {
     align-items: center;
     font-size: 50px;
     cursor: pointer;
@@ -78,37 +79,36 @@ a:active {
     padding: 0 10%;
     top: 50%;
     z-index: 1;
-  }
-  
-  .next {
+}
+
+.next {
     right: 0;
-  }
-  
-  /* Animasi */
-  .fade {
+}
+
+.fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+}
+
+@-webkit-keyframes fade {
+from {
+    opacity: 0.4;
+}
+to {
+    opacity: 1;
+}
+}
+
+@keyframes fade {
+from {
+    opacity: 0.4;
+}
+to {
+    opacity: 1;
+}
+}
 
 .faq {
     padding: 70px;
@@ -263,25 +263,30 @@ a:active {
     }
     
     .hubungisaya {
-        margin-top: 90px;
+        margin: 90px auto;
         display: flex;
         align-items: center;
         background-color: #F4F4F4;
         color: #404146;
         flex-direction: column;
         padding: 70px 0px;
+        gap: 15px;
     }
     .hubungisaya p {
         color: black;
         font-size: 15px;
         padding: 0;
         margin: 0;
-        margin: 20px 0;
+
+    }
+
+    #notif {
+        text-align: left;
     }
     
     .hubungisaya input {
+        align-items: center;
         width:50%;
-        margin-bottom: 30px;
         padding: 13px 20px;
         color: #404146;
         height: 25px;
@@ -292,7 +297,6 @@ a:active {
 
     .hubungisaya input:focus {
         width:50%;
-        margin-bottom: 30px;
         padding: 13px 20px;
         color: #404146;
         height: 25px;

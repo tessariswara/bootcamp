@@ -23,18 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const kirim = document.getElementById("kirim");
-  kirim.addEventListener("click", () => {
-    const email = document.getElementById("email");
+  const email = document.getElementById("email");
+  email.addEventListener("input", () => {
     const isi = email.value;
-    const regEmail =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const regEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     let notif = document.getElementById("notif");
     if (isi.match(regEmail)) {
       console.log("benar");
       notif.innerHTML = "Email anda valid";
       notif.style.color = "green";
     } else {
-      notif.innerHTML = "Email anda tidak valid";
+      notif.innerHTML =
+        "Email anda tidak valid (contoh valid : ninjaken@progate.com)";
       notif.style.color = "red";
     }
   });
